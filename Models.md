@@ -79,3 +79,40 @@ ___
 12. verbose_name
 13. verbose_name_plural
 
+## Model Fields
+1. UUIDField | id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+2. ImageField
+3. FileField
+4. slugField
+5. TextField
+6. CharField
+7. integerField
+8. FloatField
+9. DecimalField
+10. DateField
+11. DatetimeField
+12. JSONField
+13. AutoField
+14. BigAutoField
+15. ForeignKeyField
+16. OneToOneField
+17. ManyToManyField
+
+## ORM
+1. get() | DoesNotExist, MultipleObjectsReturned
+2. filter()
+3. all()
+4. exclude()
+5. order_by()
+6. asc()
+7. desc()
+8. reverse()
+9. distinct()
+10. qs.union(qs1, qs2)
+11. qs.intersection(qs1, qs2)
+12. qs.difference(qs1, qs2)
+13. Entry.objects.select_related('blog').get('id') -> get foreign key data as well. | performance booster | OneToOne and foreign key | does heavy work in SQL | single SQL
+14. prefetch_related() | manyToMany, ManyToOne | multiple queries | join in python
+15. Entry.objects.defer("headline", "body") | Donot retrieve
+16. Person.objects.only("name") |get only this
+
