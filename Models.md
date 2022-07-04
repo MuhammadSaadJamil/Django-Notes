@@ -23,11 +23,11 @@ ___
 `
 
 ### Examples
-> ringo = Person.objects.create(name="Ringo Starr")
-> paul = Person.objects.create(name="Paul McCartney")
-> beatles = Group.objects.create(name="The Beatles")
+> ringo = Person.objects.create(name="Ringo Starr")\
+> paul = Person.objects.create(name="Paul McCartney")\
+> beatles = Group.objects.create(name="The Beatles")\
 > m1 = Membership(person=ringo, group=beatles,
 >>     date_joined=date(1962, 8, 16),
 >>     invite_reason="Needed a new drummer.")
-> m1.save()
+> m1.save()\
 > beatles.members.all()
