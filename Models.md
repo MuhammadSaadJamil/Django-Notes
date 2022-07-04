@@ -23,7 +23,7 @@ ___
 `
 
 ### Examples
-ringo = Person.objects.create(name="Ringo Starr")
+> ringo = Person.objects.create(name="Ringo Starr")
 > paul = Person.objects.create(name="Paul McCartney")
 > beatles = Group.objects.create(name="The Beatles")
 > m1 = Membership(person=ringo, group=beatles,
