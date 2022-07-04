@@ -56,5 +56,26 @@ ___
 2. Meta is inherited by child by default
 3. Explicit inheritence of meta can be defined as `class Meta(CommonInfo.Meta)`
 4. Multiple meta inheritence mut be explicitly defined
+### Multi-table Inheritence
+1. Table created for parent as well
+2. OneToOne relation with parent
+### Proxy
+1. Place holder for same table
+2. used to override methods without changing the original
+3. declare by ` proxy=True in meta class `
 
+## Model Meta
+1. abstract
+2. app_label
+3. base_manager_name **default objects**
+4. db_table
+5. default_related_name **default model_set**
+6. get_latest_by ( usually date ) -> latest(), earliest()
+7. managed ( managed by django )
+8. order_with_respect_to = 'string' e.g one question many anwsers | question.get_anwser_order() + question.set_anwser_order() | anwser.get_next_in_order() + anwser.get_previous_in_order()
+9. ordering = ["name", "-createdAt"]
+10. proxy
+11. unique_together = ["", ""]
+12. verbose_name
+13. verbose_name_plural
 
