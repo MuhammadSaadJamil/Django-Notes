@@ -159,4 +159,13 @@ ___
 26. title__regex=r'^(An?|The) +'
 27. title__iregex=r'^(an?|the) +'
 
+## Copying object
+blog.pk = None
+blog._state.adding = True
+blog.save()
+
+## aggeregations
+1. Book.objects.all().aggregate(Avg('price'))
+2. annotate for each item of queryset. | calculating number of answers for weach question. | `Question.objects.annotate(choice_count=Count('choice'))`
+3. aggregate for whole queryset. | calculating total number of answers. | `Choice.objects.aggregate(num_votes=Sum('votes'))`
 
