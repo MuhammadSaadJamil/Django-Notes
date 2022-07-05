@@ -115,4 +115,48 @@ ___
 14. prefetch_related() | manyToMany, ManyToOne | multiple queries | join in python
 15. Entry.objects.defer("headline", "body") | Donot retrieve
 16. Person.objects.only("name") |get only this
+17. create()
+18. get_or_create() | obj, created = Person.objects.get_or_create()
+19. update_or_create()
+20. bulk_create() | bulk_create( obj1, obj2, ...) | no ManyToMany
+21. bulk_update()
+22. count()
+23. latest()
+24. earliest()
+25. first()
+26. last()
+27. exists()
+28. contains()
+29. update()
+30. delete()
+
+### Field LookUp
+1. id__exact
+2. name__iexact | case insensitive exact match
+3. name__contains
+4. name__icontains
+5. name__in = ["a","b","c"]
+6. id__gt = 14
+7. id__gte
+8. id__lt
+9. id__lte
+10. name__startswith = "AA"
+11. name__istartswith = "AA" | case insensitive
+12. name__endswith = "AA"
+13. name__iendswith = "AA" | case insensitive
+14. date__range=(start_date, end_date)
+15. date__year=2005
+16. date__month=12
+17. date__day=3
+18. date__week=52
+19. date__week_day=2
+20. date__quarter=2
+21. date__time=datetime.time(14, 30)
+22. time__hour=5
+23. time__minute=46
+24. time__second=2
+25. date__isnull=True
+26. title__regex=r'^(An?|The) +'
+27. title__iregex=r'^(an?|the) +'
+
 
