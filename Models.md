@@ -125,8 +125,8 @@ ___
 24. earliest()
 25. first()
 26. last()
-27. exists()
-28. contains()
+27. exists() | check if queryset exists
+28. contains(obj) | check if query set contain element
 29. update()
 30. delete()
 
