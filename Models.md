@@ -160,8 +160,8 @@ ___
 27. title__iregex=r'^(an?|the) +'
 
 ## Copying object
-blog.pk = None
-blog._state.adding = True
+blog.pk = None\
+blog._state.adding = True\
 blog.save()
 
 ## aggeregations
