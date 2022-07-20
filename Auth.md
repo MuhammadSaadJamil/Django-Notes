@@ -11,4 +11,18 @@
     name='Can Publish Posts',\
     content_type=content_type,\
 )`
-7.
+7. request.user.is_authenticated
+8. user = authenticate(request, username=username, password=password)\
+login(request, user)
+9. logout(request)
+10. @login_required(redirect_field_name='my_redirect_field')
+11. LoginRequiredMixin
+12. request.user.email.endswith('@example.com')
+13. @user_passes_test(email_check)\
+`def email_check(user):
+    return user.email.endswith('@example.com')`
+14. UserPassesTestMixin -> test_func
+15. permission_required(perm, login_url=None, raise_exception=False)
+16. PermissionRequiredMixin -> permission_required = '', permission_required = ('','')
+17. AccessMixin -> login_url, permission_denied_message, redirect_field_name, raise_exception
+18. update_session_auth_hash(request, form.user)
