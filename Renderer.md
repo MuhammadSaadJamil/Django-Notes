@@ -1,0 +1,9 @@
+# Renderer
+1. JSONRenderer
+2. TemplateHTMLRenderer
+3. StaticHTMLRenderer
+4. BrowsableAPIRenderer
+5. AdminRenderer
+6. HTMLFormRenderer
+7. MultiPartRenderer
+8. request.accepted_renderer

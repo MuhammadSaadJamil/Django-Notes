@@ -32,3 +32,12 @@
 ## Base Serializer:
 1. to_representation
 2. to_internal_value
+
+
+## Core args
+1. read_only
+2. write_only
+3. required
+4. default
+5. allow_null
+6. source -> what should be the data **e.g 'user.email'**
