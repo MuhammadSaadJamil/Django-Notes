@@ -16,9 +16,19 @@
 9. serializer.errors
 10. serializer(data, many=True)
 11. serializer(data, context={'key': 'value'})
+12. ListSerializer -> many=True\
+ i. allow_empty\
+ ii. min_length\
+ iii. max_length
 
 ## Model Serializer:
+1. get_field() --> Depreciated
+2. get_pk_field() --> Depreciated
 ### Meta
 1. depth = 1
 2. read_only_fields = ['account_name']
+3. list_serializer_class
 
+## Base Serializer:
+1. to_representation
+2. to_internal_value
