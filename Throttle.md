@@ -18,3 +18,5 @@ class BurstRateThrottle(UserRateThrottle):\
         'burst': '60/min',\
         'sustained': '1000/day'\
     }
+5. ScopedRateThrottle
+
