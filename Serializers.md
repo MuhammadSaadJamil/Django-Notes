@@ -16,3 +16,9 @@
 9. serializer.errors
 10. serializer(data, many=True)
 11. serializer(data, context={'key': 'value'})
+
+## Model Serializer:
+### Meta
+1. depth = 1
+2. read_only_fields = ['account_name']
+
